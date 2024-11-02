@@ -1,0 +1,16 @@
+{
+  "name": "@qufee/modo",
+  "version": "0.1.0",
+  "tasks": {
+    "publish": "deno publish"
+  },
+  "exports": "./main.ts",
+  "imports": {
+    "cliffy": "https://deno.land/x/cliffy@v1.0.0-rc.4/command/mod.ts",
+    "@std/cli": "jsr:@std/cli@^0.220.1",
+    "@std/fs": "jsr:@std/fs@^0.220.1",
+    "@std/path": "jsr:@std/path@^0.220.1",
+    "chalk": "npm:chalk@^5.3.0",
+    "merge-readable-streams": "jsr:@std/streams@^1/merge-readable-streams"
+  }
+}

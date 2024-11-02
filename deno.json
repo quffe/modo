@@ -1,0 +1,12 @@
+{
+  "tasks": {
+    "publish": "deno run -A ./cli/main.ts publish -d @qufee/modo"
+  },
+  "fmt": {
+    "semiColons": false
+  },
+  "workspace": [
+    "./cli"
+  ],
+  "imports": {}
+}
