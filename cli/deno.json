@@ -1,5 +1,5 @@
 {
-  "name": "@qufee/modo",
+  "name": "@quffe/modo",
   "version": "0.1.0",
   "tasks": {
     "publish": "deno publish"
