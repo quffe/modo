@@ -1,5 +1,5 @@
 import { Command } from "cliffy"
-import { cliRunner } from "./cli/index.ts"
+import { cliRunner } from "./task/index.ts"
 
 await new Command()
   .name("modo")
