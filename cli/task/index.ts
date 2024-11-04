@@ -71,6 +71,54 @@ const logChunk = (prefix: string, str: string | Uint8Array) => {
   })
 }
 
+/**
+* ## Installation
+*
+* To add into your project you'll need to add this in your root `deno.json` file
+*
+* ```diff
+* // deno.json
+* {
+*   "tasks": {
+* +   "modo": "deno run -A jsr:@quffe/modo"
+*   }
+* }
+* ```
+*
+* ## Usage
+*
+* ```bash
+* deno task modo [task]
+* ```
+* 
+* **Options:** 
+* `-h, --help`
+* - Show this help. 
+* `-V, --version`
+* - Show the version number for this program.
+* `-c, --clear`
+* - Clear console on execute 
+* `-d, --dir <dir>`
+* - Pass in directory to be executed
+*
+* > **Note:** `<dir>` depends on your projects `name || title || url` so if your
+* > project has name it will use it
+* 
+* ## Sample commands
+*
+* @example Running task on all projects
+*
+* ```bash
+* deno task modo build
+* ```
+*
+* @example Running task on specific project
+*
+* ```bash
+* deno task modo -d @apps/test dev
+* ```
+* @module
+*/
 export const cliRunner = async (
   { dir, command, clear }: { dir?: string; command: string; clear: boolean },
 ) => {
