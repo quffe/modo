@@ -106,6 +106,7 @@
     "members": {
       "cli": {
         "dependencies": [
+          "jsr:@cliffy/command@^1.0.0-rc.4",
           "jsr:@std/cli@~0.220.1",
           "jsr:@std/fs@~0.220.1",
           "jsr:@std/path@~0.220.1",
