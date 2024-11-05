@@ -1,6 +1,7 @@
 {
   "tasks": {
-    "publish": "deno run -A ./cli/main.ts publish -d @quffe/modo"
+    "publish": "deno run -A ./cli/main.ts publish -d @quffe/modo",
+    "publish:dr": "deno task --cwd ./cli publish --dry-run"
   },
   "fmt": {
     "semiColons": false
