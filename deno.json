@@ -6,6 +6,9 @@
   "fmt": {
     "semiColons": false
   },
+  "exclude": [
+    "README.md"
+  ],
   "workspace": [
     "./cli"
   ]
