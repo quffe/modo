@@ -1,12 +1,14 @@
 {
   "name": "@quffe/modo",
-  "version": "0.1.7",
+  "version": "0.2.0",
   "tasks": {
     "publish": "deno publish"
   },
-  "exclude": [
-    "README.md"
-  ],
+  "fmt": {
+    "exclude": [
+      "README.md"
+    ]
+  },
   "exports": "./main.ts",
   "imports": {
     "cliffy": "jsr:@cliffy/command@^1.0.0-rc.7",
