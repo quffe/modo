@@ -3,7 +3,7 @@ import { cliRunner } from "./task/index.ts"
 
 await new Command()
   .name("modo")
-  .version("v0.1.7")
+  .version("0.1.7")
   .description("Test CLI for monorepos on deno")
   .arguments("<args>")
   .option("-c, --clear", "Clear console on execute")
