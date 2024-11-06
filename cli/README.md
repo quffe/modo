@@ -32,15 +32,12 @@ To add into your project you'll need to add this in your root `deno.json` file
 deno task modo [task]
 ```
 
-**Options:** 
-`-h, --help` 
-- Show this help. 
-`-V, --version`
-- Show the version number for this program. 
-`-c, --clear`
-- Clear console on execute
-`-d, --dir <dir>`
-- Pass in directory to be executed
+**Options:**
+`-h, --help` - Show this help
+`-V, --version` - Show the version number for this program.
+`-c, --clear` - Clear console on executed
+`-d, --dir <dir>` - Pass in directory to be executed
+`-e, --exclude <exclude>` - Pass in directory to be excluded
 
 > **Note:** `<dir>` depends on your projects `name || title || url` so if your
 > project has name it will use it
@@ -59,7 +56,12 @@ Running task on specific project
 deno task modo -d @apps/test dev
 ```
 
-## Roadmap
+Excluding "./libs" Directory
+```bash
+deno task modo -x ./libs/
+```
 
+## Roadmap
+- Add support for package.json?
 - Add `init` to create deno based on framework?
 - Add more colors?
