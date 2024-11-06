@@ -4,11 +4,11 @@
     "publish:dr": "deno task --cwd ./cli publish --dry-run"
   },
   "fmt": {
-    "semiColons": false
+    "semiColons": false,
+    "exclude": [
+      "README.md"
+    ]
   },
-  "exclude": [
-    "README.md"
-  ],
   "workspace": [
     "./cli"
   ]
